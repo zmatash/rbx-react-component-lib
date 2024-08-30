@@ -1,0 +1,40 @@
+{
+  "name": "@mattrbx/react-component-lib",
+  "version": "1.0.5",
+  "description": "",
+  "main": "out/init.lua",
+  "scripts": {
+    "build": "rbxtsc",
+    "watch": "rbxtsc -w",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "types": "out/index.d.ts",
+  "files": [
+    "out",
+    "!**/*.tsbuildinfo"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@rbxts/compiler-types": "^2.3.0-types.2",
+    "@rbxts/types": "^1.0.802",
+    "@typescript-eslint/eslint-plugin": "^8.3.0",
+    "@typescript-eslint/parser": "^8.3.0",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-roblox-ts": "^0.0.36",
+    "prettier": "^3.3.3",
+    "roblox-ts": "^2.3.0-dev-30dae68",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "@mattrbx/react-building-blocks": "^1.2.7",
+    "@rbxts/services": "^1.5.4",
+    "@rbxts/ui-labs": "^2.2.0-ts.1"
+  }
+}
